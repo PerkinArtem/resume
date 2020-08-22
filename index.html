@@ -19,7 +19,7 @@
     </div>
     <aside class="aside">
         <div class="aside__close fa fa-close"></div>
-        <img src="img/main-img.jpg" class="aside__photo">
+        <img src="img/main-img.jpg" alt="avatar" class="aside__photo">
         <div class="aside__title">Перкин Артём</div>
         <div class="aside__social">
             <a href="https://www.facebook.com/profile.php?id=100017324071305" target="_blank"
@@ -119,7 +119,7 @@
                             <div class="card__text">Технологии:</div>
                             <div class="card__line"></div>
                             <div class="card__technologies">
-                                <img class="card__technologies-icon" src="img/html.png" title="HTML5" alt="HTML5">
+                                <img class="card__technologies-icon" src="img/html.png" title="HTML5" alt="HTML5" data-title="HTML5">
                                 <img class="card__technologies-icon" src="img/css.png" title="CSS3" alt="CSS3">
                                 <img class="card__technologies-icon" src="img/js.png" title="JavaScript"
                                     alt="JavaScript">
@@ -129,7 +129,7 @@
                     </div>
 
                     <div class="main__portfolio-card">
-                        <img src="img/do.jpg" class="card__img">
+                        <img src="img/do.jpg" class="card__img" alt="portfolio-img">
                         <div class="card__content">
                             <a href="http://help.document.online/" target="_blank" class="card__title"
                                 style="color: #4da1ff">Document.Online <i class="fa fa-caret-right"></i></a>
@@ -148,7 +148,7 @@
                     </div>
 
                     <div class="main__portfolio-card">
-                        <img src="img/e-poltava.jpg" class="card__img">
+                        <img src="img/e-poltava.jpg" class="card__img" alt="portfolio-img">
                         <div class="card__content">
                             <a target="_blank" class="card__title" style="color: #2bb141">Poltava Smart City</i></a>
                             <div class="card__text">Вёрстка. Разработка админ-панели</div>
@@ -207,15 +207,11 @@
                         </div>
                     </div>
                     
-                    <form action="send.php" class="contact__form">
-                        <input type="hidden" name="project_name" value="Resume">
-                        <input type="hidden" name="admin_email" value="artem.perkin1999@gmail.com">
-                        <input type="hidden" name="form_subject" value="Form Popup">
-                        
+                    <form id="form" name="form" class="contact__form">
                         <div class="contact__form-title">Напишите мне</div>
                         <input placeholder="Имя" name="name" type="text" class="form-control">
                         <input placeholder="E-mail" name="email" type="text" class="form-control">
-                        <textarea placeholder="Сообщение" name="message" class="form-control textarea"></textarea>
+                        <textarea placeholder="Сообщение" name="text" class="form-control textarea"></textarea>
                         <input type="submit" class="contact__form-btn" value="Отправить">
                     </form>
 
