@@ -1,251 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aladdin</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body>
-    <div class="overlay"></div>
-    <div class="header">
-        <div class="header__menu fa fa-bars"></div>
-        <div class="header__title"><span class="green">П</span>еркин <span class="green">А</span>ртём</div>
-    </div>
-    <aside class="aside">
-        <div class="aside__close fa fa-close"></div>
-        <img src="img/main-img.jpg" alt="avatar" class="aside__photo">
-        <div class="aside__title">Перкин Артём</div>
-        <div class="aside__social">
-            <a href="https://www.facebook.com/profile.php?id=100017324071305" target="_blank"
-                class="aside__social-item fa fa-facebook"></a>
-            <a href="https://www.instagram.com/redrick.shugart/" target="_blank"
-                class="aside__social-item fa fa-instagram"></a>
-            <a href="https://t.me/RedrickShugart" target="_blank" class="aside__social-item fa fa-telegram"></a>
-        </div>
-        <nav class="aside__nav">
-            <div class="aside__nav-item current" data-tab-name="tab-home">главная</div>
-            <div class="aside__nav-item" data-tab-name="tab-about">обо мне</div>
-            <div class="aside__nav-item" data-tab-name="tab-portfolio">портфолио</div>
-            <div class="aside__nav-item" data-tab-name="tab-contact">контакты</div>
+
+    <section class="first">
+
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__info">
+                        <div class="header__info-location header__info-item">
+                            <img src="img/location.svg" alt="location" class="header__info-icon">
+                            Kyiv, Hryshka street, 3А and 5
+                        </div>
+                        <div class="header__info-metro header__info-item">
+                            <img src="img/metro.svg" alt="metro" class="header__info-icon">
+                            Poznyaki 
+                        </div>
+                        <div class="header__info-schedule header__info-item">
+                            <img src="img/clock.svg" alt="clock" class="header__info-icon">
+                            Everyday  10:00 - 23:00
+                        </div>
+                    </div>
+                    <div class="header__lang header__info-item">UA</div>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav">
+            <div class="container">
+                <div class="nav__inner">
+                    <img src="img/logo.svg" alt="logo" class="nav__logo">
+                    <div class="nav__social">
+                        <a href="#" class="nav__social-item">
+                            <img src="img/facebook-logo.svg" alt="">
+                        </a>
+                        <a href="#" class="nav__social-item">
+                            <img src="img/instagram-logo.svg" alt="">
+                        </a>
+                        <a href="#" class="nav__social-item">
+                            <img src="img/tiktok-logo.svg" alt="">
+                        </a>
+                        <a href="#" class="nav__social-item">
+                            <img src="img/youtube-logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="nav__lang-mobile">
+                        UA
+                    </div>
+                </div>
+            </div>
         </nav>
-    </aside>
-
-    <main class="main">
-        <div class="main__home main-content tab-home current">
-            <h1 class="main__home-title"><span class="green">W</span>EB <span class="green">D</span>EVELOPER</h1>
-            <div class="main__home-buttons">
-                <a download href="resume.pdf" target="_blank" class="main__home-resume">Скачать резюме</a>
-                <a href="#popup" class="main__home-contact">Свяжитесь со мной</a>
+        
+        <div class="container">
+            <div class="main">
+                <div class="main__title">Aladdin</div>
+                <div class="main__text">The best shopping mall on Poznyaki district in Kyiv</div>
+                <a href="#" class="main__btn">Feedback</a>
             </div>
         </div>
-        <div class="main__about main-content tab-about">
-            <div class="main__about-inner global-inner">
-                <div class="main__about-title global-title">Обо мне <div class="fa fa-user"></div>
-                </div>
+        
+    </section>
 
-                <ul class="main__about-list">
-                    <div class="global-subtitle"><span class="fa fa-user-circle"></span>Личная информация</div>
-                    <li class="main__about-list_item">
-                        <span class="strong"> Место проживания</span> : г.Киев
-                    </li>
-                    <li class="main__about-list_item">
-                        <span class="strong"> Дата рождения</span> : 10 августа 1999 (21 год)
-                    </li>
-                    <li class="main__about-list_item">
-                        <span class="strong"> E-mail</span> : <a
-                            href="mailto:artem.perkin1999@gmail.com">artem.perkin1999@gmail.com</a>
-                    </li>
-                    <li class="main__about-list_item">
-                        <span class="strong"> Телефон</span> : <a href="tel:380501030300">+38 (050) 103 03 00</a>
-                    </li>
-                </ul>
-
-                <ul class="main__about-education">
-                    <div class="global-subtitle"><span class="fa fa-graduation-cap"></span>Образование</div>
-                    <li class="main__about-education_item">
-                        <span class="strong">Учебное заведение </span> : Киевский национальный университет
-                        технологий и дизайна (КНУТД)
-                    </li>
-                    <li class="main__about-education_item">
-                        <span class="strong">Факультет </span> : Мехатроники и компьютерных технологий (МКТ)
-                    </li>
-                    <li class="main__about-education_item">
-                        <span class="strong">Специальность </span> : Инженер
-                    </li>
-                </ul>
-
-                <div class="main__about-skills skills">
-                    <ul class="skills__list">
-                        <div class="skills__title global-subtitle"><span class="fa fa-user"></span>Навыки</div>
-                        <li class="skills__list-item">Базовые знания Adobe Photoshop / Avacode / Figma
-                        </li>
-                        <li class="skills__list-item">HTML , CSS(SCSS) , JavaScript
-                        </li>
-                        <li class="skills__list-item">Кроссбраузерная и адаптивная вёрстка (Bootstrap , FlexBox , Grid)
-                        </li>
-                        <li class="skills__list-item">Есть опыт использования сборщика Gulp
-                        </li>
-                        <li class="skills__list-item">Грамотное написание кода по БЭМ методологии
-                        </li>
-                    </ul>
-                </div>
-
+    <section class="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__title">About shopping mall</div>
             </div>
         </div>
+    </section>
 
 
 
-
-        <div class="main__portfolio main-content tab-portfolio">
-            <div class="main__portfolio-inner global-inner">
-                <div class="main__portfolio-title global-title">Портфолио <div class="fa fa-briefcase"></div>
-                </div>
-                <div class="main__portfolio-cards">
-
-                    <div class="main__portfolio-card">
-                        <img src="img/negic.jpg" class="card__img">
-                        <div class="card__content">
-                            <a href="https://negic.ua/" target="_blank" class="card__title"
-                                style="color: #e30000">Negic.ua <i class="fa fa-caret-right"></i></a>
-                            <div class="card__text">
-                                Вёрстка сайта. Доработка сайта на cms WordPress.
-                            </div>
-                            <div class="card__text">Технологии:</div>
-                            <div class="card__line"></div>
-                            <div class="card__technologies">
-                                <img class="card__technologies-icon" src="img/html.png" title="HTML5" alt="HTML5" data-title="HTML5">
-                                <img class="card__technologies-icon" src="img/css.png" title="CSS3" alt="CSS3">
-                                <img class="card__technologies-icon" src="img/js.png" title="JavaScript"
-                                    alt="JavaScript">
-                                <img class="card__technologies-icon" src="img/wp.png" title="WordPress" alt="WordPress">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__portfolio-card">
-                        <img src="img/do.jpg" class="card__img" alt="portfolio-img">
-                        <div class="card__content">
-                            <a href="http://help.document.online/" target="_blank" class="card__title"
-                                style="color: #4da1ff">Document.Online <i class="fa fa-caret-right"></i></a>
-                            <div class="card__text">Вёрстка faq страницы для сайта Document.Online</div>
-                            <div class="card__text">Технологии:</div>
-                            <div class="card__line"></div>
-                            <div class="card__technologies">
-                                <img class="card__technologies-icon" src="img/html.png" title="HTML5" alt="HTML5">
-                                <img class="card__technologies-icon" src="img/css.png" title="CSS3" alt="CSS3">
-                                <img class="card__technologies-icon" src="img/js.png" title="JavaScript"
-                                    alt="JavaScript">
-                                <img class="card__technologies-icon" src="img/jquery.png" title="jQuery" alt="jQuery">
-                                <img class="card__technologies-icon" src="img/bs.png" title="Bootstrap" alt="Bootstrap">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="main__portfolio-card">
-                        <img src="img/e-poltava.jpg" class="card__img" alt="portfolio-img">
-                        <div class="card__content">
-                            <a target="_blank" class="card__title" style="color: #2bb141">Poltava Smart City</i></a>
-                            <div class="card__text">Вёрстка. Разработка админ-панели</div>
-                            <div class="card__text">Технологии:</div>
-                            <div class="card__line"></div>
-                            <div class="card__technologies">
-                                <img class="card__technologies-icon" src="img/html.png" title="HTML5" alt="HTML5">
-                                <img class="card__technologies-icon" src="img/css.png" title="CSS3" alt="CSS3">
-                                <img class="card__technologies-icon" src="img/bs.png" title="Bootstrap" alt="Bootstrap">
-                                <img class="card__technologies-icon" src="img/angular.png" title="Angular"
-                                    alt="Angular">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-
-
-
-        <div class="main__contact main-content tab-contact">
-            <div class="main__contact-inner global-inner">
-                <div class="main__contact-title global-title">Контакты <div class="fa fa-id-card"></div>
-                </div>
-                <div class="main__contact-inner__content">
-                    <div class="contact__contacts">
-                        <div class="contacts__item">
-                            <div class="contacts__item-icon">
-                                <div class="fa fa-map-marker"></div>
-                            </div>
-                            <div class="contacts__item-text">
-                                <h6>Место проживания</h6>
-                                <p>Киев , Украина</p>
-                            </div>
-                        </div>
-                        <div class="contacts__item">
-                            <div class="contacts__item-icon">
-                                <div class="fa fa-envelope"></div>
-                            </div>
-                            <div class="contacts__item-text">
-                                <h6>E-mail</h6>
-                                <p><a href="mailto:artem.perkin1999@gmail.com">artem.perkin1999@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contacts__item">
-                            <div class="contacts__item-icon">
-                                <div class="fa fa-phone"></div>
-                            </div>
-                            <div class="contacts__item-text">
-                                <h6>Телефон</h6>
-                                <p><a href="tel:380501030300">+38 (050) 103 03 00</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <form id="form" name="form" class="contact__form">
-                        <div class="contact__form-title">Напишите мне</div>
-                        <input placeholder="Имя" name="name" type="text" class="form-control">
-                        <input placeholder="E-mail" name="email" type="text" class="form-control">
-                        <textarea placeholder="Сообщение" name="text" class="form-control textarea"></textarea>
-                        <input type="submit" class="contact__form-btn" value="Отправить">
-                    </form>
-
-                </div>
-
-            </div>
-        </div>
-    </main>
-
-
-    <!-- popup -->
-
-    <div class="popup" id="popup">
-        <div class="popup__body">
-            <div class="popup__content">
-                <a href="#header" class="popup__close close-popup  fa fa-close"></a>
-                <div class="popup__title">Cвязаться со мной</div>
-                <form action="send.php" class="popup__form">
-                    <input type="hidden" name="project_name" value="Resume">
-                    <input type="hidden" name="admin_email" value="artem.perkin1999@gmail.com">
-                    <input type="hidden" name="form_subject" value="Form Popup">
-
-                    <input placeholder="Имя" name="name" type="text" class="form-control">
-                    <input placeholder="E-mail" name="email" type="text" class="form-control">
-                    <textarea placeholder="Сообщение" name="message" class="form-control textarea"></textarea>
-                </form>
-                <input type="submit" class="popup__button" value="Отправить">
-            </div>
-        </div>
-    </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -1,84 +1,41 @@
 @import "variables";
+@import "common";
 
 .header{
-    display: none;
+    background-color: $main-color;
+    color: #fff;
+    &__inner{
+        display: grid;
+        grid-auto-flow: column;
+        align-content: center;
+        min-height: 41px;
+        .header{
+            &__info{
+                display: grid;
+                grid-auto-flow: column;
+                justify-content: start;
+                &-item{
+                    display: flex;
+                    align-content: center;
+                }
+                &-icon{
+                    margin-right: 7px;
+                    margin-left: 5px;
+                }
+                &-location{
+                    margin-right: 11px;
+                }
+                &-metro{
+                    margin-right: 26px;
+                }
+            }
+            &__lang{
+                text-transform: uppercase;
+                display: grid;
+                justify-content: end;
+            }
+        }
+    }   
 }
 
-.aside{
-    width: 300px;
-    background-image: url(../img/bg-aside.jpg);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    position: fixed;
-    box-shadow: $shadow;
-    z-index: 200;
-    transition: .4s;
-    min-height: 100vh;
-    &__close{
-        display: none;
-    }
-    &__photo{
-        width: 240px;
-        border-radius: 50%;
-        margin-bottom: 20px;
-        border: 4px solid #111;
-        box-shadow: $shadow;
-    }
-    &__title{
-        color: #d8d8d8;
-        margin-bottom: 40px;
-        font-size: 36px;
-        font-weight: 700;
-    }
-    &__social{
-        font-size: 24px;
-        margin-bottom: 40px;
-        display: flex;
-        &-item{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #d8d8d8;
-            height: 40px;
-            width: 40px;
-            background-color: #222;
-            margin-right: 15px;
-            border-radius: 8px;
-            box-shadow: $shadow;
-            transition: .2s;
-            &:last-child{
-                margin-right: 0;
-            }
-            &:hover{
-                color: $main-color;
-                background-color: transparent;
-                box-shadow: none;
-            }
-            
-        }
-    }
-    &__nav{
-        display: flex;
-        flex-direction: column;
-        &-item{
-            color: #d8d8d8;
-            font-size: 24px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            transition: .3s;
-            cursor: pointer;
-            &:last-child{
-                margin-bottom: 0;
-            }
-            &.current{
-                color: $main-color;
-            }
-            &:hover{
-                transform: scale(1.1);
-            }
-        }
-    }
-}
+
